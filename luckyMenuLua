@@ -1,0 +1,535 @@
+--Menu version 1.6
+--Created by EuphoricVibez
+--Lucky Menu
+
+local modmenuGUI = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local buttonGalaxySpawn = Instance.new("TextButton")
+local buttonEmptyBackpack = Instance.new("TextButton")
+local buttonRainbowSpawn = Instance.new("TextButton")
+local buttonExtraMenu = Instance.new("TextButton")
+local buttonTeleToMid = Instance.new("TextButton")
+local toggleVisibility = Instance.new("Frame")
+local buttonToggleVis = Instance.new("TextButton")
+local extraMenu = Instance.new("Frame")
+local title_2 = Instance.new("TextLabel")
+local buttonDeleteNature = Instance.new("TextButton")
+local buttonPipeTopsSolid = Instance.new("TextButton")
+local buttonCredits = Instance.new("TextButton")
+local credits = Instance.new("Frame")
+local title_3 = Instance.new("TextLabel")
+local textCredit = Instance.new("TextLabel")
+local textVersion = Instance.new("TextLabel")
+
+--Properties:
+
+modmenuGUI.Name = "modmenuGUI"
+modmenuGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+main.Name = "main"
+main.Parent = modmenuGUI
+main.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+main.Position = UDim2.new(0.151355118, 0, 0.249396592, 0)
+main.Size = UDim2.new(0, 239, 0, 275)
+main.Visible = false
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+title.Position = UDim2.new(0, 0, -0.0080971662, 0)
+title.Size = UDim2.new(0, 239, 0, 43)
+title.Font = Enum.Font.ArialBold
+title.Text = "Lucky Menu"
+title.TextColor3 = Color3.fromRGB(255, 85, 0)
+title.TextSize = 27.000
+title.TextWrapped = true
+
+buttonGalaxySpawn.Name = "buttonGalaxySpawn"
+buttonGalaxySpawn.Parent = main
+buttonGalaxySpawn.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+buttonGalaxySpawn.Position = UDim2.new(0.0529999994, 0, 0.200000003, 0)
+buttonGalaxySpawn.Size = UDim2.new(0, 213, 0, 33)
+buttonGalaxySpawn.Font = Enum.Font.ArialBold
+buttonGalaxySpawn.Text = "Spawn Galaxy Block"
+buttonGalaxySpawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+buttonGalaxySpawn.TextSize = 14.000
+
+buttonEmptyBackpack.Name = "buttonEmptyBackpack"
+buttonEmptyBackpack.Parent = main
+buttonEmptyBackpack.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+buttonEmptyBackpack.Position = UDim2.new(0.0529999994, 0, 0.5, 0)
+buttonEmptyBackpack.Size = UDim2.new(0, 213, 0, 33)
+buttonEmptyBackpack.Font = Enum.Font.ArialBold
+buttonEmptyBackpack.Text = "Empty Backpack"
+buttonEmptyBackpack.TextColor3 = Color3.fromRGB(0, 0, 0)
+buttonEmptyBackpack.TextSize = 14.000
+
+buttonRainbowSpawn.Name = "buttonRainbowSpawn"
+buttonRainbowSpawn.Parent = main
+buttonRainbowSpawn.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+buttonRainbowSpawn.Position = UDim2.new(0.0529999994, 0, 0.349999994, 0)
+buttonRainbowSpawn.Size = UDim2.new(0, 213, 0, 33)
+buttonRainbowSpawn.Font = Enum.Font.ArialBold
+buttonRainbowSpawn.Text = "Spawn Rainbow Block"
+buttonRainbowSpawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+buttonRainbowSpawn.TextSize = 14.000
+
+buttonExtraMenu.Name = "buttonExtraMenu"
+buttonExtraMenu.Parent = main
+buttonExtraMenu.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+buttonExtraMenu.Position = UDim2.new(0.0529999994, 0, 0.800000012, 0)
+buttonExtraMenu.Size = UDim2.new(0, 213, 0, 33)
+buttonExtraMenu.Font = Enum.Font.ArialBold
+buttonExtraMenu.Text = "Extra Options"
+buttonExtraMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+buttonExtraMenu.TextSize = 14.000
+
+buttonTeleToMid.Name = "buttonTeleToMid"
+buttonTeleToMid.Parent = main
+buttonTeleToMid.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+buttonTeleToMid.Position = UDim2.new(0.0529999994, 0, 0.649999976, 0)
+buttonTeleToMid.Size = UDim2.new(0, 213, 0, 33)
+buttonTeleToMid.Font = Enum.Font.ArialBold
+buttonTeleToMid.Text = "Teleport To Middle"
+buttonTeleToMid.TextColor3 = Color3.fromRGB(0, 0, 0)
+buttonTeleToMid.TextSize = 14.000
+
+toggleVisibility.Name = "toggleVisibility"
+toggleVisibility.Parent = modmenuGUI
+toggleVisibility.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+toggleVisibility.Position = UDim2.new(0, 0, 0.498051792, 0)
+toggleVisibility.Size = UDim2.new(0, 104, 0, 36)
+
+buttonToggleVis.Name = "buttonToggleVis"
+buttonToggleVis.Parent = toggleVisibility
+buttonToggleVis.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+buttonToggleVis.Size = UDim2.new(0, 104, 0, 36)
+buttonToggleVis.Font = Enum.Font.ArialBold
+buttonToggleVis.Text = "Open"
+buttonToggleVis.TextColor3 = Color3.fromRGB(255, 85, 0)
+buttonToggleVis.TextSize = 27.000
+
+extraMenu.Name = "extraMenu"
+extraMenu.Parent = modmenuGUI
+extraMenu.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+extraMenu.Position = UDim2.new(0.381568313, 0, 0.248387083, 0)
+extraMenu.Size = UDim2.new(0, 239, 0, 251)
+extraMenu.Visible = false
+
+title_2.Name = "title"
+title_2.Parent = extraMenu
+title_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+title_2.Position = UDim2.new(0, 0, -0.00398406386, 0)
+title_2.Size = UDim2.new(0, 239, 0, 43)
+title_2.Font = Enum.Font.ArialBold
+title_2.Text = "Extra Options"
+title_2.TextColor3 = Color3.fromRGB(255, 85, 0)
+title_2.TextSize = 27.000
+title_2.TextWrapped = true
+
+buttonDeleteNature.Name = "buttonDeleteNature"
+buttonDeleteNature.Parent = extraMenu
+buttonDeleteNature.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+buttonDeleteNature.Position = UDim2.new(0.0529999994, 0, 0.200000003, 0)
+buttonDeleteNature.Size = UDim2.new(0, 213, 0, 33)
+buttonDeleteNature.Font = Enum.Font.ArialBold
+buttonDeleteNature.Text = "Delete Nature (client side)"
+buttonDeleteNature.TextColor3 = Color3.fromRGB(0, 0, 0)
+buttonDeleteNature.TextSize = 14.000
+
+buttonPipeTopsSolid.Name = "buttonPipeTopsSolid"
+buttonPipeTopsSolid.Parent = extraMenu
+buttonPipeTopsSolid.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+buttonPipeTopsSolid.Position = UDim2.new(0.0529999994, 0, 0.349999994, 0)
+buttonPipeTopsSolid.Size = UDim2.new(0, 213, 0, 33)
+buttonPipeTopsSolid.Font = Enum.Font.ArialBold
+buttonPipeTopsSolid.Text = "Make Middle Pipe Tops Solid"
+buttonPipeTopsSolid.TextColor3 = Color3.fromRGB(0, 0, 0)
+buttonPipeTopsSolid.TextSize = 14.000
+
+buttonCredits.Name = "buttonCredits"
+buttonCredits.Parent = extraMenu
+buttonCredits.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+buttonCredits.Position = UDim2.new(0.0529999994, 0, 0.5, 0)
+buttonCredits.Size = UDim2.new(0, 213, 0, 33)
+buttonCredits.Font = Enum.Font.ArialBold
+buttonCredits.Text = "About"
+buttonCredits.TextColor3 = Color3.fromRGB(0, 0, 0)
+buttonCredits.TextSize = 14.000
+
+credits.Name = "credits"
+credits.Parent = extraMenu
+credits.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+credits.Position = UDim2.new(1.61800551, 0, 0.0930086076, 0)
+credits.Size = UDim2.new(0, 239, 0, 167)
+credits.Visible = false
+
+title_3.Name = "title"
+title_3.Parent = credits
+title_3.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+title_3.Position = UDim2.new(0, 0, -0.00398406386, 0)
+title_3.Size = UDim2.new(0, 239, 0, 43)
+title_3.Font = Enum.Font.ArialBold
+title_3.Text = "Credits"
+title_3.TextColor3 = Color3.fromRGB(255, 85, 0)
+title_3.TextSize = 27.000
+title_3.TextWrapped = true
+
+textCredit.Name = "textCredit"
+textCredit.Parent = credits
+textCredit.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+textCredit.Position = UDim2.new(0.0540000014, 0, 0.349999994, 0)
+textCredit.Size = UDim2.new(0, 213, 0, 33)
+textCredit.Font = Enum.Font.ArialBold
+textCredit.Text = "Created By: EuphoricVibez "
+textCredit.TextColor3 = Color3.fromRGB(0, 0, 0)
+textCredit.TextSize = 14.000
+
+textVersion.Name = "textVersion"
+textVersion.Parent = credits
+textVersion.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+textVersion.Position = UDim2.new(0.0540000014, 0, 0.600000024, 0)
+textVersion.Size = UDim2.new(0, 213, 0, 33)
+textVersion.Font = Enum.Font.ArialBold
+textVersion.Text = "Menu Version: 1.6"
+textVersion.TextColor3 = Color3.fromRGB(0, 0, 0)
+textVersion.TextSize = 14.000
+
+-- Scripts:
+
+local function EYHCTCV_fake_script() -- buttonGalaxySpawn.onClick 
+	local script = Instance.new('LocalScript', buttonGalaxySpawn)
+
+	local button = script.Parent
+	
+	local function onButtonActivated()
+			game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+end
+coroutine.wrap(EYHCTCV_fake_script)()
+local function SSFIQY_fake_script() -- main.draggable 
+	local script = Instance.new('LocalScript', main)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(SSFIQY_fake_script)()
+local function ENQLNIM_fake_script() -- buttonEmptyBackpack.onClick 
+	local script = Instance.new('LocalScript', buttonEmptyBackpack)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	local function onButtonActivated()
+		for _, tool in ipairs(player.Backpack:GetChildren()) do
+			if tool:IsA("Tool") then
+				tool:Destroy()
+			end
+		end --Deletes all tools from Backpack
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+end
+coroutine.wrap(ENQLNIM_fake_script)()
+local function LGUT_fake_script() -- buttonRainbowSpawn.onClick 
+	local script = Instance.new('LocalScript', buttonRainbowSpawn)
+
+	local button = script.Parent
+	
+	
+	local function onButtonActivated()
+		game.ReplicatedStorage.SpawnRainbowBlock:FireServer();
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+end
+coroutine.wrap(LGUT_fake_script)()
+local function SJYDQO_fake_script() -- buttonExtraMenu.onClick 
+	local script = Instance.new('LocalScript', buttonExtraMenu)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local frameExtraMenu = script.Parent.Parent.Parent.extraMenu
+	local frameCredits = frameExtraMenu.credits
+	
+	local function onButtonActivated()
+		if frameExtraMenu.Visible == true then
+			frameExtraMenu.Visible = false
+			frameCredits.Visible = false
+		else
+			frameExtraMenu.Visible = true
+		end
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+end
+coroutine.wrap(SJYDQO_fake_script)()
+local function IWHO_fake_script() -- buttonTeleToMid.onClick 
+	local script = Instance.new('LocalScript', buttonTeleToMid)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local midPosition = Vector3.new(-1041, 205, 90)
+	
+	
+	local function onButtonActivated()
+		player.Character:MoveTo(midPosition)
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+end
+coroutine.wrap(IWHO_fake_script)()
+local function SVQDC_fake_script() -- buttonToggleVis.onClick 
+	local script = Instance.new('LocalScript', buttonToggleVis)
+
+	local button = script.Parent
+	local frameMain = script.Parent.Parent.Parent.main
+	local frameExtraMenu = script.Parent.Parent.Parent.extraMenu
+	local frameCredits = frameExtraMenu.credits
+	
+	local function onButtonActivated()
+		if frameMain.Visible == true then --close all open menus
+			frameMain.Visible = false
+			frameExtraMenu.Visible = false
+			frameCredits.Visible = false
+			button.Text = "Open"
+		else
+			frameMain.Visible = true
+			button.Text = "Close"
+		end
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+end
+coroutine.wrap(SVQDC_fake_script)()
+local function FGWOOEP_fake_script() -- extraMenu.draggable 
+	local script = Instance.new('LocalScript', extraMenu)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(FGWOOEP_fake_script)()
+local function MDDNBIW_fake_script() -- buttonDeleteNature.onClick 
+	local script = Instance.new('LocalScript', buttonDeleteNature)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	
+	local function onButtonActivated()
+		for i, j in pairs(game.Workspace:GetChildren()) do -- remove trees
+			if  j.Name == "Tree" then
+				j:Destroy()
+			end
+		end
+		for i, j in pairs(game.Workspace:GetChildren()) do -- remove grass
+			if  j.Name == "Grass" then
+				j:Destroy()
+			end
+		end
+		for i, j in pairs(game.Workspace:GetChildren()) do -- remove flowers
+			if  j.Name == "Flower" then
+				j:Destroy()
+			end
+		end
+		for i, j in pairs(game.Workspace:GetChildren()) do -- remove stems
+			if  j.Name == "Stem" then
+				j:Destroy()
+			end
+		end
+		for i, j in pairs(game.Workspace:GetChildren()) do -- remove stamen
+			if  j.Name == "Stamen" then
+				j:Destroy()
+			end
+		end
+	
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+end
+coroutine.wrap(MDDNBIW_fake_script)()
+local function GAHVXOX_fake_script() -- buttonPipeTopsSolid.onClick 
+	local script = Instance.new('LocalScript', buttonPipeTopsSolid)
+
+	local button = script.Parent
+	
+	
+	
+	local function onButtonActivated()
+		
+		for i, j in pairs(game:GetService("Workspace").CenterBlocks.Givers.BlockGiverGalaxy2:GetChildren()) do
+			if  j.Name == "Pipe" then
+				j.CanCollide = true
+			end
+		end
+		
+		for i, j in pairs(game:GetService("Workspace").CenterBlocks.Givers.BlockGiverGalaxy1:GetChildren()) do
+			if  j.Name == "Pipe" then
+				j.CanCollide = true
+			end
+		end
+		
+		for i, j in pairs(game:GetService("Workspace").CenterBlocks.Givers.BlockGiverRainbow1:GetChildren()) do
+			if  j.Name == "Pipe" then
+				j.CanCollide = true
+			end
+		end
+		
+		for i, j in pairs(game:GetService("Workspace").CenterBlocks.Givers.BlockGiverRainbow2:GetChildren()) do
+			if  j.Name == "Pipe" then
+				j.CanCollide = true
+			end
+		end
+		
+		for i, j in pairs(game:GetService("Workspace").CenterBlocks.Givers.VoidGiver:GetChildren()) do
+			if  j.Name == "Pipe" then
+				j.CanCollide = true
+			end
+		end
+		--game:GetService("Workspace").CenterBlocks.Givers.BlockGiverGalaxy2.Pipe.CanCollide = true
+	
+		--game:GetService("Workspace").CenterBlocks.Givers.VoidGiver.Pipe.CanCollide = true	
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+end
+coroutine.wrap(GAHVXOX_fake_script)()
+local function QLMWOCZ_fake_script() -- buttonCredits.onClick 
+	local script = Instance.new('LocalScript', buttonCredits)
+
+	local button = script.Parent
+	local frameCredits = script.Parent.Parent.credits
+	
+	
+	local function onButtonActivated()
+		if frameCredits.Visible == true then
+			frameCredits.Visible = false
+		else
+			frameCredits.Visible = true
+		end
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+end
+coroutine.wrap(QLMWOCZ_fake_script)()
+local function PFUP_fake_script() -- credits.draggable 
+	local script = Instance.new('LocalScript', credits)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(PFUP_fake_script)()
